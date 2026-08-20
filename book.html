@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Your Trip</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Trip</h1>
+    <form id="booking-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="destination" placeholder="Destination" required />
+      <input type="date" name="date" required />
+
+      <select name="duration" required>
+        <option value="" disabled selected>Select Duration</option>
+        <option value="3 days">3 Days</option>
+        <option value="5 days">5 Days</option>
+        <option value="7 days">7 Days</option>
+      </select>
+
+      <select name="adventure" required>
+        <option value="" disabled selected>Select Adventure</option>
+        <option value="Sky Diving">Sky Diving</option>
+        <option value="Scuba Diving">Scuba Diving</option>
+        <option value="None">None</option>
+      </select>
+
+      <select name="payment" id="payment-method" required>
+        <option value="" disabled selected>Choose Payment Option</option>
+        <option value="Free">Free</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="UPI">UPI</option>
+        <option value="Cash on Arrival">Cash on Arrival</option>
+      </select>
+
+      
+      <div id="credit-card-fields" style="display: none;">
+        <input type="text" name="cardNumber" placeholder="Card Number" maxlength="16" />
+        <input type="text" name="cardHolder" placeholder="Card Holder Name" />
+        <input type="month" name="expiry" placeholder="Expiry Date" />
+        <input type="text" name="cvv" placeholder="CVV" maxlength="4" />
+      </div>
+
+     
+      <div id="upi-field" style="display: none;">
+        <input type="text" name="upiId" placeholder="Enter UPI ID" />
+      </div>
+
+      <input type="number" name="people" placeholder="Total Number of People" min="1" required />
+      <input type="text" name="totalPayment" placeholder="₹80000" value="₹80000" readonly />
+
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="error-message"  class="error-message"></p>
+  </div>
+
+  <script src="book.js"></script>
+</body>
+</html>

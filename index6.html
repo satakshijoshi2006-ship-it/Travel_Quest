@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Tour Packages</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background: #0288d1;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .packages {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .package-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .package-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .package-image img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .package-content {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .package-title {
+      font-size: 1.4rem;
+      margin: 0 0 10px 0;
+      color: #0277bd;
+    }
+
+    .package-description {
+      flex-grow: 1;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .package-price {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #d32f2f;
+      margin-bottom: 15px;
+    }
+
+    .btn-book {
+      background: #0288d1;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-align: center;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-book:hover {
+      background: #01579b;
+    }
+
+    @media (max-width: 960px) {
+      .packages {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Explore Our Travel Tour Packages</h1>
+</header>
+
+<section class="packages">
+  <article class="package-card">
+    <div class="package-image">
+      <img src="./paris.jpg" alt="Paris Tour" />
+    </div>
+    <div class="package-content">
+      <h2 class="package-title">Paris Getaway</h2>
+      <p class="package-description">Enjoy 5 days exploring the City of Love with guided tours, Seine river cruise, and exquisite French cuisine.</p>
+      <p class="package-price">$1,299 per person</p>
+      <a href="./book.html" class="btn-book">Book Now</a>
+    </div>
+  </article>
+
+  <article class="package-card">
+    <div class="package-image">
+      <img src="./switzerland.jpg" alt="Bali Tour" />
+    </div>
+    <div class="package-content">
+      <h2 class="package-title">Bali Beach Escape</h2>
+      <p class="package-description">Relax for 7 days in Bali’s pristine beaches with spa treatments, water sports, and cultural tours.</p>
+      <p class="package-price">$999 per person</p>
+      <a href="./book.html" class="btn-book">Book Now</a>
+    </div>
+  </article>
+    <article class="package-card">
+    <div class="package-image">
+      <img src="./singapore 2.jpg" alt="Bali Tour" />
+    </div>
+    <div class="package-content">
+      <h2 class="package-title">Bali Beach Escape</h2>
+      <p class="package-description">Relax for 7 days in Bali’s pristine beaches with spa treatments, water sports, and cultural tours.</p>
+      <p class="package-price">$999 per person</p>
+      <a href="./book.html" class="btn-book">Book Now</a>
+    </div>
+  </article>
+
+  <article class="package-card">
+    <div class="package-image">
+      <img src="./india.jpg" alt="New York Tour" />
+    </div>
+    <div class="package-content">
+      <h2 class="package-title">India Explorer</h2>
+      <p class="package-description">Discover the Big Apple with 4 days of sightseeing, Broadway shows, and iconic landmarks.</p>
+      <p class="package-price">$1,150 per person</p>
+      <a href="./book.html" class="btn-book">Book Now</a>
+    </div>
+  </article>
+<article class="package-card">
+    <div class="package-image">
+      <img src="./london.jpg" alt="New York Tour" />
+    </div>
+    <div class="package-content">
+      <h2 class="package-title">New York City Explorer</h2>
+      <p class="package-description">Discover the Big Apple with 4 days of sightseeing, Broadway shows, and iconic landmarks.</p>
+      <p class="package-price">$1,150 per person</p>
+      <a href="./book.html" class="btn-book">Book Now</a>
+    </div>
+  </article>
+
+  <article class="package-card">
+    <div class="package-image">
+      <img src="./singapore.jpg" alt="Safari Tour" />
+    </div>
+    <div class="package-content">
+      <h2 class="package-title">African Safari Adventure</h2>
+      <p class="package-description">Experience 6 days in the wild with guided safaris, luxury lodges, and wildlife sightings.</p>
+      <p class="package-price">$2,200 per person</p>
+      <a href="./book.html" class="btn-book">Book Now</a>
+    </div>
+  </article>
+</section>
+
+</body>
+</html>
